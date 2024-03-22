@@ -8,7 +8,7 @@ public class lecture01 {
         t=Character.toUpperCase(t);
 //        for (int i = 0; i < str.length(); i++) {
 //            if(str.charAt(i)==t) answer++;
-//        }ㅇㅇ
+//        }ㅇㅇㅇㅇ
 
 
         for(char x :str.toCharArray())  // for each 에서 : 이후는 iterator가 와야함 배열 , 컬렉션객체
