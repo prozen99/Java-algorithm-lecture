@@ -1,4 +1,6 @@
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class lecture04_2 {
@@ -12,7 +14,10 @@ public class lecture04_2 {
          */
         int n=scanner.nextInt();//문자열 입력받을 개수
         String[] str=new String[n];
-        ArrayList<String> answer=new ArrayList<>();
+        ArrayList<String> answer=new ArrayList<>(
+                // 이런식으로 arrayList 초기화 가능
+                // 일단은 코드 연습용
+        );
         for (int i = 0; i < n; i++) {
             str[i]=scanner.next();//각각의 문자 hello ,good 같은 문자열 입력받기
         }
@@ -23,7 +28,7 @@ public class lecture04_2 {
             // 뭐 ex) hello 면 ['h','e','l','l','o']
             int lt=0, rt=x.length()-1; // 뭐 study라 치면 s가 lt y가 rt인거임
             //그래서 시작인덱스와 마지막 인덱스를 구성
-            while(lt<rt)
+            while(lt < rt)
             {
                 char tmp=s[lt]; // s는지금char형 배열이고 삼단 교환하는 알고리즘
                 s[lt]=s[rt];
